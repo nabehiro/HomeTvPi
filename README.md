@@ -13,7 +13,7 @@ chinachu は m2ts, mp4, WebM のコンテナ形式でストリーミングダウ
 [ラズパイ3B\+ を地上波8ch全録サーバにできるか試してみました \- Qiita](https://qiita.com/Daigorian/items/165dd3d46663d5ddf6e0)
 
 ## サーバ環境(raspi)
-- PC: Raspberry Pi 3 Model B(not +)  
+- Raspberry Pi 3 Model B(not +)  
 - OS: RASPBIAN STRETCH LITE
 - ICカード リーダーライター ACR39-NTTCom
 - tuner: PX-S1UD V2.0
