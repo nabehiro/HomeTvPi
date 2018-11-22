@@ -6,10 +6,10 @@
 - リアルタイム視聴は TVTest でする。TVTest 使いやすい　:smile:
 - 録画は chinachu で行う。保存形式は chinachu では一般的(?) な m2ts 形式で保存。
 - chinachu の番組表がとても使いやすい　:smile:
-- 録画の閲覧は、Chinachu の wui から m2ts 形式のストリーミング閲覧可能なURLが記載された XSPF ファイルをダウンロード、VLC プレイヤーで再生してる。 :scream:  
+- 録画の閲覧は、Chinachu の wui から m2ts 形式のストリーミング閲覧可能なURLが記載された XSPF ファイルをダウンロード、VLC プレイヤーで再生していて面倒。。 :scream:  
 chinachu は m2ts, mp4, WebM のコンテナ形式でストリーミングダウンロードできるが、mp4, WebM の場合 m2ts からのリアルタイム変換が必要で、raspi が非力なので変換プログラムの ffmpeg が CPU を食いまくる ＆ まともに閲覧できなかった。
 - TODO: 録画終了後、m2ts から mp4 に変換するスケジューラー仕込む。chinachu wui から、変換後ファイルをストリーミングダウンロードできるようにしたい。:heart:
-- TODO: もう１，２本チューナーがほしい（２，３本までなら大丈夫そう  
+- TODO: もう１，２本チューナーがほしい（２，３本までなら大丈夫そう :heart:
 [ラズパイ3B\+ を地上波8ch全録サーバにできるか試してみました \- Qiita](https://qiita.com/Daigorian/items/165dd3d46663d5ddf6e0)
 
 ## サーバ環境(raspi)
