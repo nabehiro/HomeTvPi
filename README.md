@@ -38,7 +38,7 @@ tuner は、PX-S1UD なので以下を参考にする。
 - 録画したファイルを chinachu wui 経由で、 m2ts ストリーミング再生する時、dvbv5-zap を利用するほうが安定する。
 - TVTest で チャネルスキャンをすると、recdvb だと失敗したが dvdb5-zap では成功した。
 
-### ffmpeg
+### ffmpeg, ffprobe...
 chinachu に同梱されている動画変換ソフトの ffmpeg は、
 [Chinachu/chinachu at 09edc70e6a952c130ca294a6ea3c1607653bf08c · Chinachu/Chinachu](https://github.com/Chinachu/Chinachu/blob/09edc70e6a952c130ca294a6ea3c1607653bf08c/chinachu#L178) にあるように
 [FFmpeg Static Builds](https://www.johnvansickle.com/ffmpeg/) から取得している。取得している ffmpeg は、arm である raspberry pi 3 では利用できないビルドので arm x86 用(armhf: ffmpeg-release-armhf-static.tar.xz)の ビルド済の ffmpeg をダウンロードする。 これで、chihachu wui 上で ストリーム再生はできるようになる。    
