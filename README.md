@@ -41,7 +41,7 @@ tuner は、PX-S1UD なので以下を参考にする。
 ### ffmpeg, ffprobe...
 chinachu に同梱されている動画変換ソフトの ffmpeg は、
 [Chinachu/chinachu at 09edc70e6a952c130ca294a6ea3c1607653bf08c · Chinachu/Chinachu](https://github.com/Chinachu/Chinachu/blob/09edc70e6a952c130ca294a6ea3c1607653bf08c/chinachu#L178) にあるように
-[FFmpeg Static Builds](https://www.johnvansickle.com/ffmpeg/) から取得している。取得している ffmpeg は、arm である raspberry pi 3 では利用できないビルドので arm x86 用(armhf: ffmpeg-release-armhf-static.tar.xz)の ビルド済の ffmpeg をダウンロードする。 これで、chihachu wui 上で ストリーム再生はできるようになる。    
+[FFmpeg Static Builds](https://www.johnvansickle.com/ffmpeg/) から取得している。installer が取得している ffmpeg は、arm である raspberry pi 3 では利用できないビルドなので arm x86 用(armhf: ffmpeg-release-armhf-static.tar.xz)の ビルドを取得して chinachu/usr/bin 内のファイルを置換ないしシンボリックリンクを作成すればよい。 これで、chihachu wui 上で ストリーム再生はできるようになる。    
 参考: [Raspbian\(Raspberry PI 0/1/2/3\)にFFmpeg 4\.x を導入するには \- Qiita](https://qiita.com/hirohiro77/items/14ca3ad0c593fc4990af)
 
 ## クライアント環境の構築
