@@ -8,9 +8,11 @@
 - chinachu の番組表がとても使いやすい　:smile:
 - 録画の閲覧は、Chinachu の wui から m2ts 形式のストリーミング閲覧可能なURLが記載された XSPF ファイルをダウンロード、VLC プレイヤーで再生していて面倒。。 :scream:  
 chinachu は m2ts, mp4, WebM のコンテナ形式でストリーミングダウンロードできるが、mp4, WebM の場合 m2ts からのリアルタイム変換が必要で、raspi が非力なので変換プログラムの ffmpeg が CPU を食いまくる ＆ まともに閲覧できなかった。
-- TODO: 録画終了後、m2ts から mp4 に変換するスケジューラー仕込む。chinachu wui から、変換後ファイルをストリーミングダウンロードできるようにしたい。:heart:
-- TODO: もう１，２本チューナーがほしい（２，３本までなら大丈夫そう :heart:
-[ラズパイ3B\+ を地上波8ch全録サーバにできるか試してみました \- Qiita](https://qiita.com/Daigorian/items/165dd3d46663d5ddf6e0)
+
+## 改善点 :heart:
+- 録画終了後、m2ts から mp4 に変換するスケジューラー仕込む。chinachu wui から、変換後ファイルをストリーミングダウンロードできるようにしたい。
+- もう１，２本チューナーがほしい（２，３本までなら大丈夫そう [ラズパイ3B\+ を地上波8ch全録サーバにできるか試してみました \- Qiita](https://qiita.com/Daigorian/items/165dd3d46663d5ddf6e0)
+- 検索
 
 ## サーバ環境(raspi)
 - Raspberry Pi 3 Model B(not +)  
@@ -37,8 +39,9 @@ tuner は、PX-S1UD なので以下を参考にする。
 - TVTest で チャネルスキャンをすると、recdvb だと失敗したが dvdb5-zap では成功した。
 
 ### ffmpeg
-chinachu に同梱されている動画変換ソフトの ffmpeg は、raspberry pi 3 では利用できないので
-[FFmpeg Static Builds](https://www.johnvansickle.com/ffmpeg/) から arm x86 用(armhf: ffmpeg-release-armhf-static.tar.xz)の ビルド済の ffmpeg をダウンロードする。 一応、chihachu wui 上で ストリーム再生はできるようになるが、CPU 食いまくりでほとんどまともに閲覧できない。  
+chinachu に同梱されている動画変換ソフトの ffmpeg は、
+[Chinachu/chinachu at 09edc70e6a952c130ca294a6ea3c1607653bf08c · Chinachu/Chinachu](https://github.com/Chinachu/Chinachu/blob/09edc70e6a952c130ca294a6ea3c1607653bf08c/chinachu#L178) にあるように
+[FFmpeg Static Builds](https://www.johnvansickle.com/ffmpeg/) から取得している。取得している ffmpeg は、arm である raspberry pi 3 では利用できないビルドので arm x86 用(armhf: ffmpeg-release-armhf-static.tar.xz)の ビルド済の ffmpeg をダウンロードする。 これで、chihachu wui 上で ストリーム再生はできるようになる。    
 参考: [Raspbian\(Raspberry PI 0/1/2/3\)にFFmpeg 4\.x を導入するには \- Qiita](https://qiita.com/hirohiro77/items/14ca3ad0c593fc4990af)
 
 ## クライアント環境の構築
