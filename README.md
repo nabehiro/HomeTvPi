@@ -27,6 +27,7 @@ chinachu は m2ts, mp4, WebM のコンテナ形式でストリーミングダウ
 ## サーバ環境の構築
 基本 [ラズパイ3B\+ を地上波8ch全録サーバにできるか試してみました \- Qiita](https://qiita.com/Daigorian/items/165dd3d46663d5ddf6e0) 通り。
 
+### 録画コマンド
 tuner は、PX-S1UD なので以下を参考にする。  
 [Raspberry Pi 3\+Chinachuで地デジ録画サーバー構築 \- Qiita](https://qiita.com/shotasano/items/3809b8f3e0b62d51d3c3#%E3%83%81%E3%83%A5%E3%83%BC%E3%83%8A%E3%83%BC%E3%81%AE%E6%BA%96%E5%82%99)
 
@@ -34,6 +35,11 @@ tuner は、PX-S1UD なので以下を参考にする。
 [recdvb \- Qiita](https://qiita.com/shotasano/items/3809b8f3e0b62d51d3c3#%E9%8C%B2%E7%94%BB%E7%94%A8%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB) を利用していたが、dvb-tools をインストールすると入る dvbv5-zap を使用することにより以下が改善した。  
 - 録画したファイルを chinachu wui 経由で、 m2ts ストリーミング再生する時、dvbv5-zap を利用するほうが安定する。
 - TVTest で チャネルスキャンをすると、recdvb だと失敗したが dvdb5-zap では成功した。
+
+### ffmpeg
+chinachu に同梱されている動画変換ソフトの ffmpeg は、raspberry pi 3 では利用できないので
+[FFmpeg Static Builds](https://www.johnvansickle.com/ffmpeg/) から arm x86 用(armhf: ffmpeg-release-armhf-static.tar.xz)の ビルド済の ffmpeg をダウンロードする。 一応、chihachu wui 上で ストリーム再生はできるようになるが、CPU 食いまくりでほとんどまともに閲覧できない。  
+参考: [Raspbian\(Raspberry PI 0/1/2/3\)にFFmpeg 4\.x を導入するには \- Qiita](https://qiita.com/hirohiro77/items/14ca3ad0c593fc4990af)
 
 ## クライアント環境の構築
 ### TVTest 0.9.0 のビルド
