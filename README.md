@@ -47,6 +47,8 @@ chinachu に同梱されている動画変換ソフトの ffmpeg は、
 
 [Raspberry Pi 3でx264とハードウエアエンコーダが使えるFFmpegをビルドする](https://signal-flag-z.blogspot.com/2017/05/raspberry-pix264ffmpeg.html)
 
+apt-get と 自分 build ともに、1440x1080 の m2ts を、mp4 に変換するのは 3fps だった。
+
 ## クライアント環境の構築
 ### TVTest 0.9.0 のビルド
 TVTest 0.9.0 は、github からもろもろソースをあつめて Visual Studio 2017 でビルドしていく。以下に従ってビルドしていく。自分は x64 でやってるくらい  
