@@ -45,6 +45,8 @@ chinachu に同梱されている動画変換ソフトの ffmpeg は、
 
 [Raspberry Pi 3 Model Bで動画処理アプリ FFmpegをコンパイルする方法 \(ラズパイ３で動画音声変換処理プログラム FFmpegをセルフコンパイルしてインストールする方法\)](http://www.neko.ne.jp/~freewing/raspberry_pi/raspberry_pi_3_compile_ffmpeg/)
 
+[Raspberry Pi 3でx264とハードウエアエンコーダが使えるFFmpegをビルドする](https://signal-flag-z.blogspot.com/2017/05/raspberry-pix264ffmpeg.html)
+
 ## クライアント環境の構築
 ### TVTest 0.9.0 のビルド
 TVTest 0.9.0 は、github からもろもろソースをあつめて Visual Studio 2017 でビルドしていく。以下に従ってビルドしていく。自分は x64 でやってるくらい  
