@@ -1,11 +1,8 @@
 TVTestビルド・接続
 
-TVTest 
 
 # 参考
 - [TVTest0\.9\.0の設定 \| EncTools](https://enctools.com/tvtest-settings/)
-- 
-
 
 # VS 2019 インストール
 VS 2019 をインストールする。
