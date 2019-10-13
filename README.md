@@ -1,4 +1,4 @@
-Raspberry Pi 3 Model B で
+Raspberry Pi 3 Model B, Raspberry Pi 4 Model B で
 raspbian buster で、chinachu 環境を構築します。
 
 [Home · Chinachu/Chinachu Wiki](https://github.com/Chinachu/Chinachu/wiki)
