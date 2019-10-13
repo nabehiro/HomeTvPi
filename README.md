@@ -3,7 +3,7 @@ raspbian buster で、chinachu 環境を構築します。
 
 [Home · Chinachu/Chinachu Wiki](https://github.com/Chinachu/Chinachu/wiki)
 
-#　手順
+# 手順
 1. [Raspberrypi のディスク作成～接続](./1_SetupDisk.md)
 2. [Raspberrypi の初期設定](./2_InitPi.md)
 3. [チューナーを利用できるようにする](./3_SetupTuner.md)
