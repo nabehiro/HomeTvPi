@@ -212,6 +212,8 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'output2.mp4':
 
 # Raspberry Pi 4 Model B (4GB)
 
+※冷却ファン付き アルミニウム合金ケースを使用している。
+
 ## Distribution
 ```
 $ lsb_release -a
